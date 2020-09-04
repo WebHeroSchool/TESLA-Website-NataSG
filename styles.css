@@ -1,0 +1,270 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1440px;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.header__logo {
+  display: flex;
+  width: 166px;
+  height: 51px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.header__logo:hover {
+  cursor: pointer;
+}
+
+.menu-model {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-left: 220px;
+  /* width: 36%; */
+}
+
+.menu-model__item {
+  width: 70px;
+  height: 19px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+  margin: 0 15px;
+}
+
+.menu-model__item:first-child {
+  margin-right: 38px;
+}
+
+.menu-model__item_center {
+  margin-left: 10px;
+}
+
+.menu-model__item_roadster {
+  margin-left: 25px;
+}
+
+.menu-model__item:last-child {
+  margin-left: 25px;
+  margin-right: -5px;
+}
+
+.menu-model__item_active {
+  color: #e51937;
+}
+
+.menu-model__item_active::after {
+  content: "";
+  background: url(./src/img/underline.svg) bottom no-repeat;
+  display: block;
+  width: 60px;
+  height: 2px;
+  position: relative;
+  top: 6px;
+  right: 2px;
+}
+
+.side-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 100px;
+  padding-right: 0;
+}
+
+.side-menu__item {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+  margin: 0 25px;
+}
+
+.side-menu__item:last-child {
+  padding-right: 0;
+}
+
+.hamburger-menu__icon {
+  width: 24px;
+  height: 15px;
+  padding-top: 3px;
+  padding-right: 0;
+  cursor: pointer;
+  margin-right: 0;
+}
+
+.preview__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 110px;
+  margin: 55px auto 0 auto;
+}
+
+.preview__subtitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: -10px;
+}
+
+.preview {
+  background-image: url('./src/img/Tesla-Wordmark-Red.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.preview__foto {
+  display: flex;
+  margin: auto;
+  width: 67%;
+  padding: 26px auto;
+}
+
+.preview__specs {
+  width: 850px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 300px;
+  padding-top: 35px;
+}
+
+.speed__value, .distance__value {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+  margin: 0;
+  padding: 0;
+}
+
+.speed__unit, .distance__unit {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.speed__subtitle, .distance__subtitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.speed__value::before {
+  content: "";
+  background: url(./src/img/speed.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 34px;
+  top: 14px;
+  padding-right: 14px;
+}
+
+.speed__subtitle {
+  padding-left: 65px;
+}
+
+.distance {
+  padding-left: 25px;
+}
+
+.distance__value::before {
+  content: "";
+  background: url(./src/img/road.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 50px;
+  top: 7px;
+  padding-right: 15px;
+}
+
+.test-drive {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-left: 70px;
+}
+
+.test-drive::before {
+  content: "";
+  background: url(./src/img/wheel.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  width: 22px;
+  height: 22px;
+  padding-right: 7px;
+  margin-top: -4px;
+}
+
+.test-drive:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.preview__order-button_red {
+  color: #E51937;
+  border: 2px solid #E51937;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  width: 160px;
+  height: 40px;
+  background-color: #fff;
+  margin-top: 10px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+.preview__order-button_red:hover {
+  cursor: pointer;
+  animation-duration: .2s;
+  color: #fff;
+  background-color: #E51937;
+}
+
+/* @media
+and (max-width:1024px)
+and (min-width:768px) {
+  .hamburger-menu__icon {
+    width: 24px;
+    height: 15px;
+  }
+
+  .menu-model, .side-menu {
+    visibility: hidden;
+  } */
+
+  .preview__specs {

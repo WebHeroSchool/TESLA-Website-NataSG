@@ -4,26 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>Tesla</title>
+  <link rel="stylesheet" href="./fonts.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="header">
-    <img class="header__logo" src="./src/img/Tesla-Wordmark-Red.png" alt="Logo">
+    <img class="header__logo" src="./src/img/Tesla-Wordmark-Red-header.svg" alt="Logo">
     <nav class="menu-model">
       <a class="menu-model__item menu-model__item_active" href="link">Model S</a>
-      <a class="menu-model__item" href="link">Model X</a>
-      <a class="menu-model__item" href="link">Model 3</a>
-      <a class="menu-model__item" href="link">Roadster</a>
-      <a class="menu-model__item" href="link">Energy</a>
+      <a class="menu-model__item" href="#">Model X</a>
+      <a class="menu-model__item menu-model__item_center" href="#">Model 3</a>
+      <a class="menu-model__item menu-model__item_roadster" href="#">Roadster</a>
+      <a class="menu-model__item" href="#">Energy</a>
     </nav>
     <div class="side-menu">
-      <a class="side-menu__item" href="link">Магазин</a>
-      <a class="side-menu__item" href="link">Войти</a>
-      <div class="hamburger-menu">
-        <input class="hamburger-menu__toggle" type="checkbox">
-        <label class="hamburger-menu__btn" for="hamburger-menu__toggle">
-          <span></span>
-        </label>
+      <a class="side-menu__item" href="#">Магазин</a>
+      <a class="side-menu__item" href="#">Войти</a>
+      <div class="hamburger-menu side-menu__item">
+        <img class="hamburger-menu__icon" src="./src/img/burger.svg">
       </div>
     </div>
   </header>
@@ -32,17 +30,22 @@
       <div class="preview__intro">
         <h1 class="preview__title">Model S</h1>
         <p class="preview__subtitle">Добро пожаловать в будущее!</p>
-        <img class="preview__logo" src="./src/img/Tesla-Wordmark-Red.png" alt="Tesla-Wordmark-Red">
-        <img class="preview__foto" src="./src/img/tesla-png-tesla-png-hd-1636.png" alt="TeslaS">
-      </div>
+         <div class="preview__image">
+           <img class="preview__foto" src="./src/img/tesla-png-tesla-png-hd-1636.png" alt="TeslaS">
+         </div>
+       </div>
       <div class="preview__specs">
         <div class="speed">
-          <h5 class="speed__value">2,7</h5>
-          <p class="speed__unit">сек</p>
+          <h3 class="speed__value">2,7
+            <span class="speed__unit">сек</span>
+          </h3>
+          <p class="speed__subtitle">0-100 км/час</p>
         </div>
         <div class="distance">
-          <h5 class="distance__value">632</h5>
-          <p class="distance__unit">км</p>
+          <h3 class="distance__value">632
+            <span class="distance__unit">км</span>
+          </h3>
+          <p class="distance__subtitle">запас хода</p>
         </div>
         <div class="test-drive">ТЕСТ ДРАЙВ</div>
         <button class="preview__order-button preview__order-button_red">ЗАКАЗАТЬ</button>
@@ -59,21 +62,21 @@
         </div>
         <div class="aside__specs">
           <div class="display">
-            <h5 class="display__value">17
+            <h3 class="display__value">17
               <span class="display__unit">дюймов
               </span>
-            </h5>
+            </h3>
             <p class="display__text">Большой дисплей</p>
           </div>
           <div class="wifi">
-            <h5 class="wifi__unit">Беспроводное обновление ПО</h5>
+            <h3 class="wifi__unit">Беспроводное обновление ПО</h3>
             <p class="wifi__text">Повышенная функциональность</p>
           </div>
           <div class="load">
-            <h5 class="load__value">894
+            <h3 class="load__value">894
               <span class="load__unit">литра
               </span>
-            </h5>
+            </h3>
             <p class="load__text">Объем грузового пространства</p>
           </div>
         </div>
