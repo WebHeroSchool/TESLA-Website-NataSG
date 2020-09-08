@@ -46,7 +46,7 @@ body {
 } */
 
 .menu-model__item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .menu-model__item_active {
